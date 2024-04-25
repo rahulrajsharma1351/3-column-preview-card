@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 55vw;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 25px;
+}
+
+.card {
+    padding: 2.6rem;
+}
+
+.card h1 {
+    color: var(--Very-light-gray);
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    font-size: 40px;
+    margin: 25px 0;
+}
+
+.card p {
+    color: var(--Transparent-white);
+    font-family: "Lexend Deca";
+}
+
+.card button {
+    font-family: "Lexend Deca";
+    padding: 0.8rem 2.5rem;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 50px;
+    border: 2px solid white;
+    border-radius: 50px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.card1 {
+    background-color: var(--Bright-orange);
+}
+
+.card1 button {
+    color: var(--Bright-orange);
+}
+
+.card2 {
+    background-color: var(--Dark-cyan);
+}
+
+.card2 button {
+    color: var(--Dark-cyan);
+}
+
+.card3 {
+    background-color: var(--Very-dark-cyan);
+}
+
+.card3 button {
+    color: var(--Very-dark-cyan);
+}
+
+.attribution {
+    font-size: 15px;
+    text-align: center;
+    font-family: "Lexend Deca";
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width :800px) {
+    body {
+        height: auto;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        width: 87vw;
+    }
+
+    .card h1 {
+        font-size: 50px;
+    }
+
+    .card p {
+        font-size: 20px;
+    }
+
+    .attribution {
+        font-size: 13px;
+    }
+}
